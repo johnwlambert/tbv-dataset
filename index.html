@@ -202,7 +202,7 @@
     <center><h1>Abstract</h1></center>
     <tr>
       <td>
-        High-definition (HD) map change detection is the task of determining when sensor data and map data are no longer in agreement with one another due to real-world changes. We collect the first dataset for the task, which we entitle the Trust, but Verify (TbV) dataset, by mining thousands of hours of data from over 9 months of autonomous vehicle fleet operations. We present learning-based formulations for solving the problem in the bird’s eye view and ego-view. Because real map changes are infrequent and vector maps are easy to synthetically manipulate, we lean on simulated data to train our model. Perhaps surprisingly, we show that such models can generalize to real world distributions. The dataset, consisting of maps and logs collected in six North American cities, is one of the largest AV datasets to date with more than 7.9 million images. We make the data available to the public, along with code and models3 under the the CC BY-NC-SA 4.0 license.
+        High-definition (HD) map change detection is the task of determining when sensor data and map data are no longer in agreement with one another due to real-world changes. We collect the first dataset for the task, which we entitle the Trust, but Verify (TbV) dataset, by mining thousands of hours of data from over 9 months of autonomous vehicle fleet operations. We present learning-based formulations for solving the problem in the bird’s eye view and ego-view. Because real map changes are infrequent and vector maps are easy to synthetically manipulate, we lean on simulated data to train our model. Perhaps surprisingly, we show that such models can generalize to real world distributions. The dataset, consisting of maps and logs collected in six North American cities, is one of the largest AV datasets to date with more than 7.9 million images. We make the data available to the public, along with code and models under the the CC BY-NC-SA 4.0 license.
       </td>
     </tr>
   </table>
@@ -213,7 +213,7 @@
   <hr>
   <center><h1>Talk</h1></center>
   <p align="center">
-    <iframe width="660" height="395" src="https://www.youtube.com/embed/WBOVn0LC7dI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+    <iframe width="660" height="395" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
   </p>
 
   <table align=center width=800px>
@@ -229,11 +229,10 @@
 
 
 
-Excited to announce the public release of our new massive dataset for HD map change detection accompanying our NeurIPS '21 paper (with  -- the "Trust, but Verify" Dataset
+New massive dataset for HD map change detection accompanying our NeurIPS '21 paper (with  -- the "Trust, but Verify" Dataset.
 
 
-
-This release is significant, since dealing with real world changes and stale maps is a constant problem for large-scale self-driving efforts today. And this is the first public dataset for it. Here's an example of a stale map, after a bike lane was added: 1/n
+This release is significant, since dealing with real world changes and stale maps is a constant problem for large-scale self-driving efforts today. And this is the first public dataset for it. Here's an example of a stale map, after a bike lane was added:
 
 
   <center>
@@ -257,11 +256,7 @@ This release is significant, since dealing with real world changes and stale map
   </center>
 
 
-
-
-
-HD maps have proven to be an effective way to assist self-driving vehicles in **safely** navigating difficult intersections and city streets. Unprotected lefts are not easy! 2/n
-
+HD maps have proven to be an effective way to assist self-driving vehicles in **safely** navigating difficult intersections and city streets. Unprotected lefts are not easy!
 
 
   <center>
@@ -284,14 +279,7 @@ HD maps have proven to be an effective way to assist self-driving vehicles in **
     </table>
   </center>
 
-
-
-
-
-
-
-But we live in a constantly-changing world, so maps need to constantly be updated. Training and evaluating models in academia for this has been difficult without public datasets for the task. 3/n
-
+But we live in a constantly-changing world, so maps need to constantly be updated. Training and evaluating models in academia for this has been difficult without public datasets for the task.
 
   <center>
     <table align=center width=850px>
@@ -313,9 +301,7 @@ But we live in a constantly-changing world, so maps need to constantly be update
     </table>
   </center>
 
-
-
-We lean on using real sensor data with synthetically modified maps to train new models, and evaluate on over 200 logs with real world map changes. We mined large-scale fleet data for almost a year to collect interesting map changes. Here's an example from downtown Pittsburgh 4/
+We lean on using real sensor data with synthetically modified maps to train new models, and evaluate on over 200 logs with real world map changes. We mined large-scale fleet data for almost a year to collect interesting map changes. Here's an example from downtown Pittsburgh:
 
   <center>
     <table align=center width=850px>
@@ -337,7 +323,7 @@ We lean on using real sensor data with synthetically modified maps to train new 
     </table>
   </center>
 
-Each log is about 54 seconds long, and there are over 1000 of them in total, across train/val/test. This amounts to about 17 continuous hours of sensor data -- 8 Million images and 1 TB of data. An example from Stanford campus: (5/n)
+Each log is about 54 seconds long, and there are over 1000 of them in total, across train/val/test. This amounts to about 17 continuous hours of sensor data -- 8 Million images and 1 TB of data. An example from Stanford campus:
 
   <center>
     <table align=center width=850px>
@@ -359,9 +345,9 @@ Each log is about 54 seconds long, and there are over 1000 of them in total, acr
     </table>
   </center>
 
-Every log comes with a paired HD map, with lane boundaries & markings in 3d, along with a ground height map, drivable area polygons, and annotated crosswalks. 6/n
+Every log comes with a paired HD map, with lane boundaries & markings in 3d, along with a ground height map, drivable area polygons, and annotated crosswalks.
 
-By number of driving hours, this dataset is about 3x the size of nuScenes (15.5 hours vs. 5.5 hours), and comes with annotated HD maps for all the logs. It's captured in 6 cities -- Austin, Detroit, Miami, Palo Alto, Pittsburgh, and Washington DC -- across 4 seasons. 7/n
+By number of driving hours, this dataset is about 3x the size of nuScenes (15.5 hours vs. 5.5 hours), and comes with annotated HD maps for all the logs. It's captured in 6 cities -- Austin, Detroit, Miami, Palo Alto, Pittsburgh, and Washington DC -- across 4 seasons.
 
   <center>
     <table align=center width=850px>
