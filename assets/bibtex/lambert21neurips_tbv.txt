@@ -1,0 +1,7 @@
+@inproceedings{Lambert21neurips_TrustButVerifyHDMapChangeDetection,
+ author = {Lambert, John W. and Hays, James},
+ booktitle = {Advances in Neural Information Processing Systems Track on Datasets and Benchmarks},
+ title = {{Trust, but Verify}: Cross-Modality Fusion for HD Map Change Detection},
+ url = {https://openreview.net/pdf?id=cXCZnLjDm4s},
+ year = {2021}
+}
